@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640">
+<defs>
+ <linearGradient id="cbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1016"/><stop offset="1" stop-color="#05070A"/></linearGradient>
+ <linearGradient id="hz" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3C5" stop-opacity="0"/><stop offset="0.25" stop-color="#22D3C5" stop-opacity="0.55"/><stop offset="0.75" stop-color="#67F0FF" stop-opacity="0.55"/><stop offset="1" stop-color="#67F0FF" stop-opacity="0"/></linearGradient>
+ <radialGradient id="dawn" cx="0.5" cy="1" r="0.6"><stop offset="0" stop-color="#22D3C5" stop-opacity="0.16"/><stop offset="1" stop-color="#22D3C5" stop-opacity="0"/></radialGradient>
+ <pattern id="cgrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.035"/></pattern>
+ <filter id="cglow" x="-10%" y="-400%" width="120%" height="900%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+<rect width="1280" height="640" fill="url(#cbg)"/>
+<rect width="1280" height="640" fill="url(#cgrid)"/>
+<rect x="0" y="256" width="1280" height="200" fill="url(#dawn)"/>
+<rect x="0" y="456" width="1280" height="2" fill="url(#hz)" filter="url(#cglow)"/>
+<rect x="0" y="456" width="1280" height="2" fill="url(#hz)"/>
+
+<svg x="120" y="184" width="232" height="232" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0E141B"/><stop offset="1" stop-color="#06090D"/></linearGradient>
+    <linearGradient id="sbeam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#14B8A6" stop-opacity="0.35"/><stop offset="0.35" stop-color="#22D3C5"/><stop offset="1" stop-color="#67F0FF"/></linearGradient>
+    <pattern id="sgrid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity="0.04"/></pattern>
+    <filter id="sglow" x="-20%" y="-300%" width="140%" height="700%"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#sbg)"/>
+  <rect width="512" height="512" rx="112" fill="url(#sgrid)"/>
+  <g transform="translate(10 0)">
+  <!-- horizon beam = the H's crossbar, running out past the structure -->
+  <rect x="64" y="290" width="324" height="24" rx="3" fill="url(#sbeam)" filter="url(#sglow)" opacity="0.6"/>
+  <rect x="64" y="290" width="324" height="24" rx="3" fill="url(#sbeam)"/>
+  <!-- the H: two pillars; the right one carries the wright's chamfer -->
+  <rect x="104" y="128" width="64" height="256" rx="6" fill="#EEF2F6"/>
+  <path d="M250 134 a6 6 0 0 1 6 -6 h22 l42 42 v208 a6 6 0 0 1 -6 6 h-58 a6 6 0 0 1 -6 -6 z" fill="#EEF2F6"/>
+  <!-- cursor: the build is never finished -->
+  <rect x="404" y="262" width="24" height="52" rx="3" fill="#67F0FF"/>
+</g>
+
+</svg>
+<text x="400" y="292" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="96" font-weight="700" fill="#EEF2F6" letter-spacing="-3">Horizonwright</text>
+<text x="404" y="356" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34" fill="#C9D3DE">We build toward the horizon.</text>
+<text x="404" y="410" font-family="'JetBrains Mono', 'SF Mono', Menlo, monospace" font-size="22" fill="#8A97A8"><tspan fill="#22D3C5">→</tspan> products · platforms · agents</text>
+</svg>

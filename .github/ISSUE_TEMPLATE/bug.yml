@@ -1,0 +1,26 @@
+name: Bug report
+description: Something is broken or behaves unexpectedly
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. …\n2. …\n3. …"
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: App version / device, or API endpoint and environment (local, live).
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      render: text
